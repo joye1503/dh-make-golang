@@ -1,16 +1,19 @@
 dist: bionic
+group: edge
+virt: lxd
 
 language: go
 
 go:
-  - 1.11.x
+  #- 1.11.x
   - 1.13.x
   - master
 
 arch:
   - amd64
   - arm64
-  - ppc64le
+  - arm64-graviton2
+#  - ppc64le
 
 jobs:
   allow_failures:
